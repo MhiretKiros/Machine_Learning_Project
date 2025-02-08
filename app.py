@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # FastAPI endpoint
-API_URL = "http://127.0.0.1:8000/predict/"
+API_URL = "https://machine-learning-project-14.onrender.com/predict/"
 
 # Streamlit App Layout
 st.title("🌍 Travel Destination Recommendation")
