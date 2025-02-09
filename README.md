@@ -9,6 +9,7 @@ Key Features
 •	Interactive Web Interface: Built with Streamlit for an intuitive and user-friendly experience.
 •	Comprehensive Insights: Recommends not only destinations but also transportation and accommodation options.
 •	Scalable: Easily extendable to incorporate additional features and models.
+
 Technology Stack
 •	Machine Learning: RandomForestClassifier and RandomForestRegressor from scikit-learn for prediction tasks.
 •	Backend: FastAPI for building the API to serve the model and handle real-time user requests.
@@ -52,6 +53,7 @@ CopyEdit
 streamlit run app/frontend.py
 The frontend will be available at http://localhost:8501.
 Usage
+
 Interacting with the System
 1.	Provide User Inputs: In the Streamlit app, users can input preferences such as destination type, budget, travel season, etc.
 2.	Prediction: The backend processes the inputs and uses the trained model to recommend the best travel destination.
@@ -60,6 +62,7 @@ Interacting with the System
 FastAPI Endpoint
 The backend exposes a POST endpoint at /predict/ for travel destination predictions.
 Example Input Format:
+
 json
 CopyEdit
 {
@@ -73,8 +76,10 @@ CopyEdit
   "food_interests": "Vegetarian",
   "travel_type_group": "Solo"
 }
+
 Streamlit Frontend
 The Streamlit app provides a simple form where users can input their preferences and view the recommended destination. Upon submission, it sends the data to the FastAPI backend for prediction.
+
 Model Training and Evaluation
 The model is trained using historical data on travel destinations and user preferences. Key steps:
 1.	Data Preprocessing: Handling missing values, encoding categorical features, and scaling numerical values.
