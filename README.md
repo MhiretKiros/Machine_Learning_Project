@@ -118,8 +118,8 @@ After deployment, the API and UI should be tested to ensure that:
 
 ## Deployment
 The system can be deployed using cloud platforms:
-- **Backend (FastAPI)**: Deployed on Render. Access the API at [FastAPI Docs](https://machine-learning-project-11-muoj.onrender.com/docs)
-- **Frontend (Streamlit)**: Deployed on Streamlit Cloud. Access the app at [Streamlit App](https://mhiretkiros-machine-learning-project-app-v7ztrl.streamlit.app/)
+- **Backend (FastAPI)**: Deployed on Render. Access the API at [FastAPI Docs] (https://machine-learning-project-11-muoj.onrender.com/docs)
+- **Frontend (Streamlit)**: Deployed on Streamlit Cloud. Access the app at [Streamlit App] (https://mhiretkiros-machine-learning-project-app-v7ztrl.streamlit.app/)
 
 ## Conclusion
 This project demonstrates the power of AI in the travel industry by providing personalized recommendations based on various factors. The integration of **FastAPI, Streamlit, and Machine Learning** allows for a scalable and interactive system. Future improvements may include adding more features, integrating real-time data, or enhancing the UI for an even better user experience.
