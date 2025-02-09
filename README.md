@@ -113,8 +113,8 @@ async def predict_travel_destination(input_data: dict):
 ✔️ Assess **model performance using a test set**.  
 
 ## 🚀 Deployment
-🔹 **Backend (FastAPI)** – Hosted on **Render**: [FastAPI Docs](https://machine-learning-project-11-muoj.onrender.com/docs)  
-🔹 **Frontend (Streamlit)** – Deployed on **Streamlit Cloud**: [Streamlit App](https://mhiretkiros-machine-learning-project-app-v7ztrl.streamlit.app/)  
+🔹 **Backend (FastAPI)** – Hosted on **Render**: (https://machine-learning-project-11-muoj.onrender.com/docs)  
+🔹 **Frontend (Streamlit)** – Deployed on **Streamlit Cloud**: (https://mhiretkiros-machine-learning-project-app-v7ztrl.streamlit.app/)  
 
 ## 🏁 Conclusion
 🎯 The **Personalized Travel Destination Recommender** leverages **AI & machine learning** to enhance travel planning. The integration of **FastAPI, Streamlit, and ML models** ensures a seamless and interactive experience. Future improvements may include **real-time data integration** and **an improved UI design**.
