@@ -74,7 +74,7 @@ The backend exposes a **POST** endpoint at `/predict/` for travel destination pr
   "accommodation_preference": "Hotel",
   "interest": "Adventure",
   "food_interests": "Vegetarian",
-  "travel_type_group": "Solo"
+  "travel_type_group": "Solo Traveler"
 }
 ```
 
