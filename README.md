@@ -51,7 +51,8 @@ Interacting with the System
 3.	Recommendations: The system returns the destination suggestion along with additional travel insights (transportation, accommodation, etc.).
 4.	Adjustable Preferences: Users can modify their preferences to see how changes affect the recommendations.
 FastAPI Endpoint
-The backend exposes a POST endpoint at /predict/ for travel destination predictions. Example input format:
+The backend exposes a POST endpoint at /predict/ for travel destination predictions.
+Example Input Format:
 json
 CopyEdit
 {
@@ -73,7 +74,8 @@ The model is trained using historical data on travel destinations and user prefe
 2.	Model Training: Using a RandomForestClassifier for classification tasks.
 3.	Model Evaluation: Evaluating model performance using metrics like accuracy, precision, recall, and F1-score.
 Backend API (FastAPI)
-The FastAPI backend serves the trained model and handles incoming requests for predictions. Example:
+The FastAPI backend serves the trained model and handles incoming requests for predictions.
+Example:
 python
 CopyEdit
 from fastapi import FastAPI
@@ -82,6 +84,7 @@ import pandas as pd
 
 app = FastAPI()
 
+# Load the trained model
 model = joblib.load("travel_recommendation_model.pkl")
 label_encoders = joblib.load("label_encoders.pkl")
 
@@ -98,10 +101,16 @@ After deployment, the API and UI should be tested to ensure that:
 •	The model performs well on the test set.
 Deployment
 The system can be deployed using cloud platforms:
-•	Backend (FastAPI): Deployed on Render. Access the API at https//machine-learning-project-11-muoj.onrender.com/docs
-•	.Frontend (Streamlit): Deployed on Streamlit Cloud. Access the app at Shttps://mhiretkiros-machine-learning-project-app-v7ztrl.streamlit.app/
+•	Backend (FastAPI): Deployed on Render. Access the API at https://machine-learning-project-11-muoj.onrender.com/docs
+•	Frontend (Streamlit): Deployed on Streamlit Cloud. Access the app at https://mhiretkiros-machine-learning-project-app-v7ztrl.streamlit.app/
 Conclusion
 This project demonstrates the power of AI in the travel industry by providing personalized recommendations to users based on various factors. The integration of FastAPI, Streamlit, and machine learning allows for a scalable and interactive system. Future improvements can include adding more features, integrating real-time data, or enhancing the UI for an even better user experience.
 Links:
 •	GitHub Repository: https://github.com/MhiretKiros/Machine_Learning_Project
+•	Streamlit App: https://mhiretkiros-machine-learning-project-app-v7ztrl.streamlit.app/
+•	FastAPI Documentation: https://machine-learning-project-11-muoj.onrender.com/docs
+Contact
+For any questions or suggestions, feel free to reach out:
+•	Email: kirosmhret97@gmail.com
+•	LinkedIn:  https://www.linkedin.com/in/mhret-kiros-8aa2ba332/
 
