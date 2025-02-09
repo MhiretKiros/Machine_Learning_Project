@@ -1,6 +1,8 @@
 Personalized Travel Destination Recommender
+
 Overview
 The Personalized Travel Destination Recommender is an AI-powered system designed to help users find vacation destinations tailored to their unique preferences. By analyzing inputs such as budget, travel season, personal interests, and accommodation preferences, the system provides personalized destination suggestions. The backend uses FastAPI for real-time predictions, while the user-friendly interface is built with Streamlit.
+
 Key Features
 •	Personalized Recommendations: Offers travel destination suggestions based on user preferences like budget, trip purpose, accommodation type, and interests.
 •	Real-Time Predictions: FastAPI backend ensures quick responses for travel recommendations.
@@ -13,33 +15,38 @@ Technology Stack
 •	Frontend: Streamlit for creating the web interface.
 •	Serialization: Joblib for saving and loading the trained models.
 •	Data Processing: Pandas and scikit-learn for data manipulation, preprocessing, and encoding.
+
 Installation Guide
 Prerequisites
 Make sure you have the following installed:
 •	Python 3.7 or higher
 •	pip (Python's package installer)
 •	A code editor (e.g., VS Code, PyCharm)
+
 Steps to Install and Run Locally
 1.	Clone the Repository:
 bash
 CopyEdit
 git clone https://github.com/MhiretKiros/Machine_Learning_Project.git
 cd Machine_Learning_Project
-2.	Set up a Virtual Environment: For Windows:
+
+3.	Set up a Virtual Environment: For Windows:
 bash
 CopyEdit
 python -m venv venv
 .\venv\Scripts\activate
-3.	Install Dependencies:
+5.	Install Dependencies:
 bash
 CopyEdit
 pip install -r requirements.txt
-4.	Start the FastAPI Backend:
+
+7.	Start the FastAPI Backend:
 bash
 CopyEdit
 uvicorn app.main:app --reload
 The backend will be available at http://127.0.0.1:8000.
-5.	Start the Streamlit Frontend:
+
+8.	Start the Streamlit Frontend:
 bash
 CopyEdit
 streamlit run app/frontend.py
@@ -94,21 +101,26 @@ async def predict_travel_destination(input_data: TravelInput):
     prediction = model.predict(pd.DataFrame([encoded_data]))
     predicted_destination = label_encoders["Country_Info"].inverse_transform(prediction)[0]
     return {"predicted_destination": predicted_destination}
+    
 Testing the Model
 After deployment, the API and UI should be tested to ensure that:
 •	The API returns correct predictions for user inputs.
 •	The Streamlit UI displays the correct recommendations.
 •	The model performs well on the test set.
+
 Deployment
 The system can be deployed using cloud platforms:
 •	Backend (FastAPI): Deployed on Render. Access the API at https://machine-learning-project-11-muoj.onrender.com/docs
 •	Frontend (Streamlit): Deployed on Streamlit Cloud. Access the app at https://mhiretkiros-machine-learning-project-app-v7ztrl.streamlit.app/
+
 Conclusion
 This project demonstrates the power of AI in the travel industry by providing personalized recommendations to users based on various factors. The integration of FastAPI, Streamlit, and machine learning allows for a scalable and interactive system. Future improvements can include adding more features, integrating real-time data, or enhancing the UI for an even better user experience.
+
 Links:
 •	GitHub Repository: https://github.com/MhiretKiros/Machine_Learning_Project
 •	Streamlit App: https://mhiretkiros-machine-learning-project-app-v7ztrl.streamlit.app/
 •	FastAPI Documentation: https://machine-learning-project-11-muoj.onrender.com/docs
+
 Contact
 For any questions or suggestions, feel free to reach out:
 •	Email: kirosmhret97@gmail.com
